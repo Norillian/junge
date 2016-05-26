@@ -76,51 +76,7 @@
 
   <section class="small-12 medium-7 columns product-information">
 
-<div class="holder top-pi">
-      <div class="pInfoProductPrices left">
-          <eSeller:If isfalse="Product:ShowSalesprice">
-          <div class="ProductPrice">
-            <div class="ProductPriceLabel">
-              <eSeller:Select text="label_price" />
-            </div>
-          </div>
-          </eSeller:If>
-        <eSeller:If istrue="Product:ShowSalesprice">
-
-          <div class="ProductPrice">
-            <div class="ProductPriceLabel">
-              <eSeller:Select text="label_price" />
-            </div>
-            <div class="ProductPriceValue">
-              <eSeller:Control ControlID="SalesPrice" ControlType="Productprice" />
-            </div>
-          </div>
-
-          <eSeller:If istrue="Product:HasListprice">
-            <div class="ProductListPrice">
-              <div class="ProductListPriceLabel">
-                <eSeller:Select text="label_list_price" />
-              </div>
-              <div class="ProductListPriceValue">
-                <eSeller:Select Value-Of="Product:Pricing.ListTagPriceFormatted" />
-              </div>
-            </div>
-          </eSeller:If>
-
-          <eSeller:If istrue="Product:ShowPreviousSalesprice">
-            <div class="ProductPreviousPrice">
-              <div class="ProductPreviousPriceLabel">
-                <eSeller:Select text="label_previous_price" />
-              </div>
-              <div class="ProductPreviousPriceValue">
-                <eSeller:Control ControlID="PreviousSalesPrice" ControlType="Productprice" />
-              </div>
-            </div>
-          </eSeller:If>
-        </eSeller:If>
-      </div>
-
-      <!--<eSeller:If IsFalse="Product:HasVariants">-->
+      <!--<div class="holder top-pi">
         <div class="stockAmountArea right">
           <div class="stockAmountText">
             <eSeller:Select text="label_StockAmount" />
@@ -129,20 +85,7 @@
             <eSeller:Select Value-Of="Product:StocklevelFormatted" />
           </div>
         </div>
-      <!--</eSeller:If>-->
-
-      <!--<eSeller:If IsTrue="Product:IsVariant">
-        <div class="stockAmountArea">
-          <div class="stockAmountText">
-            <eSeller:Select text="label_StockAmount" />
-          </div>
-          <div class="stockAmountValue" style="float:left">
-            <eSeller:Select Value-Of="Product:StocklevelFormatted" />
-          </div>
-        </div>
-      </eSeller:If>-->
-
-      </div>
+    </div>-->
 
       <h1 class="product-name"><eSeller:Select Value-Of="Product:ProductName" /></h1>
 
@@ -208,6 +151,46 @@
           </div>
         </div>
       </eSeller:if>
+
+      <div class="pInfoProductPrices left">
+          <eSeller:If isfalse="Product:ShowSalesprice">
+          <div class="ProductPrice">
+            <div class="ProductPriceLabel">
+              <eSeller:Select text="label_price" />
+            </div>
+          </div>
+          </eSeller:If>
+        <eSeller:If istrue="Product:ShowSalesprice">
+
+          <div class="ProductPrice">
+            <div class="ProductPriceLabel">
+              <eSeller:Select text="label_price" />
+            </div>
+          </div>
+
+          <eSeller:If istrue="Product:HasListprice">
+            <div class="ProductListPrice">
+              <div class="ProductListPriceLabel">
+                <eSeller:Select text="label_list_price" />
+              </div>
+              <div class="ProductListPriceValue">
+                <eSeller:Select Value-Of="Product:Pricing.ListTagPriceFormatted" />
+              </div>
+            </div>
+          </eSeller:If>
+
+          <eSeller:If istrue="Product:ShowPreviousSalesprice">
+            <div class="ProductPreviousPrice">
+              <div class="ProductPreviousPriceLabel">
+                <eSeller:Select text="label_previous_price" />
+              </div>
+              <div class="ProductPreviousPriceValue">
+                <eSeller:Control ControlID="PreviousSalesPrice" ControlType="Productprice" />
+              </div>
+            </div>
+          </eSeller:If>
+        </eSeller:If>
+      </div>
 
     <eSeller:Control ControlType="ProductDocuments" ControlID="productDocs" />
 
