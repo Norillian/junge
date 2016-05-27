@@ -102,7 +102,7 @@ padding-top: 90px;
 #main .frontpageLoginDiv {
 display: inline-block;
 background-color: #FFFFFF;
-margin: 30px auto;
+margin: 30px auto 0;
 }
 #salesPersonLogin .headerBarLogin h2 {
 font-size: 24px;
@@ -208,6 +208,40 @@ height: auto !important;
     .sendPasswordArea br {
 display: none;
 }
+
+#LanguageSelect {
+    display: none;
+}
+
+.change-lang-container {
+    max-width: 386px;
+    text-align: right;
+    margin: 0 auto;
+}
+
+.change-lang-container a {
+    background-color: #ffffff;
+    padding: 0.5em;
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    border-width: 0.1em;
+    border-bottom-color: #333333;
+    width: 3em;
+    text-align: center;
+    margin: 0em;
+    display: inline-block;
+    margin-left: 3px;
+    color: #008CBA!important;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.change-lang-container a:hover {
+    background-color: #cccccc;
+    color: #666666;
+    text-decoration: none;
+}
+
 } /* Define mobile styles */
 
 /* Header Styling */
@@ -255,6 +289,7 @@ padding-right: 30px;
 background: #e6e6e6 url('/media/352/img/thin-0033_search_find_zoom.svg')no-repeat 60px 7px;
 padding-right: 30px;
 background-size: 16px 16px;
+min-width: 81px;
 }
 .btn-change-customer, .btn-end-customer {
 color: #000;

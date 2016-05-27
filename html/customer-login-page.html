@@ -1,0 +1,102 @@
+<eSeller:Css name="Sælger:cmsLoginPage" Selector="#cmsLoginPage" GroupName="Cms" SelectorGroup="3" />
+
+<eSeller:Css Name="Login Top Bar (Div)" Selector=".topBar" GroupName="Customer login box" SelectorGroup="12" />
+<eSeller:Css name="Customer login box" Selector="#customerLogin" GroupName="Customer login box" SelectorGroup="3" />
+<eSeller:Css name="Customer login box h2" Selector="#customerLogin h2" GroupName="Customer login box" SelectorGroup="33" />
+<eSeller:Css Name="Header (div)" Selector="#customerLogin .headerBarLogin" GroupName="Customer login box" SelectorGroup="12" />
+<eSeller:Css Name="Login Greeting Header (div)" Selector="#customerLogin .greetingDiv" GroupName="Customer login box" SelectorGroup="12" />
+<eSeller:Css Name="Login Content (div)" Selector="#customerLogin .loginContent" GroupName="Customer login box" SelectorGroup="12" />
+<eSeller:Css Name="Login Help Message (div)" Selector="#customerLogin .loginHelpMessage" GroupName="Customer login box" SelectorGroup="12" />
+<eSeller:Css Name="Login Help Message (span)" Selector="#customerLogin .loginHelpMessage span" GroupName="Customer login box" SelectorGroup="12" />
+<eSeller:Css name="Customer login box label" Selector="#customerLogin label" GroupName="Customer login box" SelectorGroup="5" />
+<eSeller:Css name="Customer login box div.button" Selector="#customerLogin div.button" GroupName="Customer login box" SelectorGroup="3" />
+<eSeller:Css name="Customer login box div.button input" Selector="#customerLogin div.button input" GroupName="Customer login box" SelectorGroup="11" />
+<eSeller:Css name="Customer login box a" Selector="#customerLogin a" GroupName="Customer login box" SelectorGroup="1" />
+<eSeller:Css name="Customer login box a:hover" Selector="#customerLogin a:hover" GroupName="Customer login box" SelectorGroup="13" />
+
+<eSeller:Css Name="Login Top Bar Sales Person (Div)" Selector=".topBarSalesPerson" GroupName="Salesperson login box" SelectorGroup="12" />
+<eSeller:Css name="Salesperson login box" Selector="#salesPersonLogin" GroupName="Salesperson login box" SelectorGroup="3" />
+<eSeller:Css name="Salesperson login box h2" Selector="#salesPersonLogin h2" GroupName="Salesperson login box" SelectorGroup="33" />
+<eSeller:Css Name="Login Greeting Header (div)" Selector="#salesPersonLogin .greetingDiv" GroupName="Customer login box" SelectorGroup="12" />
+<eSeller:Css name="Salesperson login box label" Selector="#salesPersonLogin label" GroupName="Salesperson login box" SelectorGroup="5" />
+<eSeller:Css name="Salesperson login box textBox" Selector="#salesPersonLogin input.textbox" GroupName="Salesperson login box" SelectorGroup="20" />
+<eSeller:Css name="Salesperson login box div.button" Selector="#salesPersonLogin div.button" GroupName="Salesperson login box" SelectorGroup="3" />
+<eSeller:Css name="Salesperson login box div.button input" Selector="#salesPersonLogin div.button input" GroupName="Salesperson login box" SelectorGroup="11" />
+<eSeller:Css name="Salesperson login box a" Selector="#salesPersonLogin a" GroupName="Salesperson login box" SelectorGroup="1" />
+<eSeller:Css name="Salesperson login box a:hover" Selector="#salesPersonLogin a:hover" GroupName="Salesperson login box" SelectorGroup="13" />
+<style type="text/css">
+#main #ucInfoMessagebdy {
+margin-top: 1em;
+background: transparent !important;
+}
+#main #precontentContainer #ucInfoMessagebdy div {
+color: #000000;
+font-size: 1.4rem;
+background: transparent !important;
+}
+
+</style>
+
+<div class="frontpageLoginDiv">
+<table border="0" celpadding="0" cellspacing="2" align="center">
+
+  <tr>
+<eSeller:if istrue="Settings:IsCustomerLoginEnabled">
+<td valign="top">
+
+        <div class="topBar"></div>
+        <div id="customerLogin">
+          <div class="headerBarLogin">
+              <h2>
+                  <eSeller:Select Text="heading_customerlogin"></eSeller:Select>
+              </h2>
+          </div>
+          <div class="greetingDiv">
+              <eSeller:Select Text="label_greeting"></eSeller:Select>
+          </div>
+          <div class="loginContent">
+              <eSeller:Control ControlID="customerLogin" ControlType="customerLogin" />
+          </div>
+        </div>
+        <div class="loginHelpMessage">
+          <span><eSeller:Select Text="label_help_message"></eSeller:Select></span>
+          <span><eSeller:Select Text="label_help_call"></eSeller:Select></span>
+        </div>
+
+    </td>
+</eSeller:if>
+    <td valign="top">
+      <eSeller:if istrue="Settings:IsSalespersonLoginEnabled">
+       <div class="topBarSalesPerson"></div>
+        <div id="salesPersonLogin">
+          <div class="headerBarLogin">
+              <h2>
+               <eSeller:Select Text="heading_salespersonlogin"></eSeller:Select>
+              </h2>
+          </div>
+          <div class="greetingDiv">
+              <eSeller:Select Text="label_greeting"></eSeller:Select>
+          </div>
+          <div class="loginContent">
+              <eSeller:Control ControlID="SalesPersonLogin" ControlType="SalesPersonLogin" LandingUrl="/default2.aspx" />
+          </div>
+        </div>
+        <div class="loginHelpMessage">
+          <span><eSeller:Select Text="label_help_message"></eSeller:Select></span>
+          <span><eSeller:Select Text="label_help_call"></eSeller:Select></span>
+        </div>
+
+      </eSeller:if>
+    </td>
+  </tr>
+</table>
+</div>
+
+<eSeller:Css Name="Current selected customer" selector=".salespersonMenu label" groupname="Salesperson menu" selectorgroup="12" />
+<eSeller:Css Name="Links (actions)" selector=".salespersonMenu div a" groupname="Salesperson menu" selectorgroup="1" />
+<eSeller:Css Name="Links (actions) hover" selector=".salespersonMenu div a:hover" groupname="Salesperson menu" selectorgroup="13" />
+
+
+<eSeller:If IsTrue="Settings:IsSalespersonLoggedIn">
+<eSeller:Control ControlType="CustomerSelector" ControlID="Kundevælger" />
+</eSeller:If>
