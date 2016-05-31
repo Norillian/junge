@@ -42,7 +42,9 @@ $(document).ready(function(){
         }
     }
 
-    $('.frontpageLoginDiv').after(changeLang);
+    if($('.frontpageLoginDiv').length > 0) {
+        $('.frontpageLoginDiv').after(changeLang);
+    }
 
     // SmartSearch
     $('#drop2 .textbox').appendTo('.inputfield');
