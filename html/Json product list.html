@@ -95,6 +95,9 @@
             <span class="deprecatedText"><eSeller:Select text="label_deprecatedText" /></span>
         </div>
 
+        <script type="text/javascript">
+            var customerIDHash = '<eSeller:Select Value-Of="Context:AuthTokenUrlEncoded" />';
+        </script>
         <script src="/media/352/js/JsonProductList.js?test"></script>
     </eSeller:If>
     <eSeller:If IsTrue='Context:QueryparmExists("_escaped_fragment_")'>
