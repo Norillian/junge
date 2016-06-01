@@ -247,6 +247,10 @@ display: none;
     min-width: 120px;
 }
 
+#main #ShopContent #invoiceOverview {
+    width: 100%;
+}
+
 
 } /* Define mobile styles */
 
@@ -1106,8 +1110,8 @@ margin: 0;
 display: inline-block;
 }
 .basket-details table td.c1 a img {
-width: 80px !important;
-height: 80px !important;
+max-width: 80px !important;
+max-width: 80px !important;
 }
 .basket-details table td.c3 > i,
 .basket-details table td.c4 > i,

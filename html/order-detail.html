@@ -1,0 +1,70 @@
+<eSeller:Data DataType="OrderHead" DataId="Order" IsOrderConfirmation="False" NotFoundYields403="True" DetailsQuerystringKey="ec54"/>
+<eSeller:Control ControlID="Bestil igen" ControlType="OrderToBasketSpecific" DataSourceId="Order" />
+ <table class="content" cellspacing="2" cellpadding="2" width="100%" border="0">
+   <tr>
+     <td valign="top" width="50%">
+       <div>
+         <strong>
+           <eSeller:Select Text="label_invoice_head" TextSourceControlId="Betalingsadresse" />
+         </strong>
+       </div>
+
+       <eSeller:Control ControlId="Betalingsadresse" ControlType="OrderPaymentAddress" DataSourceId="Order" />
+     </td>
+     <td valign="top" width="50%">
+       <div>
+         <strong>
+           <eSeller:Select Text="label_delivery_head" TextSourceControlId="Leveringsadresse" />
+         </strong>
+       </div>
+       <eSeller:If IsTrue="Data_Order:IsShipmentAddressSpecified">
+         <eSeller:Control ControlId="Leveringsadresse" ControlType="OrderShipmentAddress"  DataSourceId="Order" />
+       </eSeller:If>
+       <eSeller:If IsFalse="Data_Order:IsShipmentAddressSpecified">
+         <eSeller:Select Text="label_delivery_not_specified" TextSourceControlId="Leveringsadresse"/>
+       </eSeller:If>
+     </td>
+   </tr>
+   <tr>
+     <td colspan="2">
+       <table>
+         <tr>
+           <td valign="top">
+             <eSeller:Select Text="label_payment_method" TextSourceControlId="Betalingsmåde" />
+           </td>
+           <td valign="top">
+             <eSeller:Control ControlType="OrderPaymentMethod" ControlId="Betalingsmåde"  DataSourceId="Order" />
+           </td>
+         </tr>
+         <tr>
+           <td valign="top">
+             <eSeller:Select Text="label_delivery_method" TextSourceControlId="Leveringsmåde" />
+           </td>
+           <td valign="top">
+             <eSeller:Control ControlType="OrderShipmentMethod" ControlId="Leveringsmåde" DataSourceId="Order" />
+           </td>
+         </tr>
+         <tr>
+           <td class="content" colspan="2">
+             <eSeller:Select Text="label_order_remarks" TextSourceControlId="Ordrebemærkning"/>
+           </td>
+         </tr>
+         <tr>
+           <td colspan="2">
+             <eSeller:Control ControlType="OrderOrderingRemarks" ControlId="Ordrebemærkning"  DataSourceId="Order"  />
+           </td>
+         </tr>
+       </table>
+     </td>
+   </tr>
+ </table>
+
+ <style type="text/css">
+   .ec64TableTotals {width:100%;}
+   .ec64TableTotals .c2 {text-align:right;}
+   .ec54Table .c4 { text-align: center; }
+   .ec54Table .c5, .ec54Table .c6, .ec54Table .c7 { text-align: right; }
+ </style>
+
+ <eSeller:Control ControlId="Ordrelinjer" ControlType="OrderDetails" DataSourceId="Order" CanReOrder="False" />
+ <eSeller:Control ControlId="Totaler" ControlType="OrderTotals" DataSourceId="Order" />
