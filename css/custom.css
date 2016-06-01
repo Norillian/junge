@@ -242,11 +242,21 @@ display: none;
     text-decoration: none;
 }
 
+.customer-info span {
+    display: inline-block;
+    min-width: 120px;
+}
+
+
 } /* Define mobile styles */
 
 @media only screen and (max-width:640px){
     #main .frontpageLoginBanner img {
         padding-top: 45px;
+    }
+    .customer-info span {
+        font-size: 14px;
+        min-width: 100px;
     }
 }
 
