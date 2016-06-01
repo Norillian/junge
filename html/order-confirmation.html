@@ -1,0 +1,204 @@
+<eSeller:Css Name="OrderConfirmation" Selector=".orderConfirmationHelp" GroupName="Text" SelectorGroup="24" />
+<eSeller:Css Name="OrderNumber" Selector=".orderNumber" GroupName="Text" SelectorGroup="24" />
+<eSeller:Css Name="OrderNumberValue" Selector=".orderNumberValue" GroupName="Text" SelectorGroup="24" />
+<eSeller:Css Name="PaymentHeader" Selector=".paymentHeader" GroupName="Payment And Shipment Address" SelectorGroup="24" />
+<eSeller:Css Name="ShipmentHeader" Selector=".shipmentHeader" GroupName="Payment And Shipment Address" SelectorGroup="24" />
+<eSeller:Css Name="PaymentMethod" Selector=".paymentMethod" GroupName="Payment and Shipment" SelectorGroup="24" />
+<eSeller:Css Name="OrderPaymentMethod" Selector=".orderPaymentMethod" GroupName="Payment and Shipment" SelectorGroup="24" />
+<eSeller:Css Name="ShipmentMethod" Selector=".shipmentMethod" GroupName="Payment and Shipment" SelectorGroup="24" />
+<eSeller:Css Name="OrderShipmentMethod" Selector=".orderShipmentMethod" GroupName="Payment and Shipment" SelectorGroup="24" />
+
+<style type="text/css">
+.basketPreStep {
+text-align:left;
+}
+
+.content tr td {
+padding-left: 0px !important;
+padding-right: 0px !important;
+
+}
+@media only screen and (max-width: 40em) {
+.orderCompletePageBdy #ec54 .ec54Table td {
+width: 100% !important;
+text-align:left !important;
+}
+
+.orderCompletePageBdy #ec54 .ec54Table tr{
+    display:block;
+    overflow:hidden;
+    padding:1rem .5rem;
+    position:relative;
+  }
+  .orderCompletePageBdy #ec54 .ec54Table tbody td {
+
+    display:block;
+    padding:.2rem 0rem;
+	  /* padding: 0px 5px 0px 0px !important; */
+    float:left;
+    width:100%;
+  }
+
+  .orderCompletePageBdy #ec54 .ec54Table tr.HeaderBar{
+    display:none;
+  }
+
+  .orderCompletePageBdy #ec54 .ec54Table tr td:before{
+    display:inline-block;
+    font-weight:bold;
+    width:40%;
+  }
+
+
+  .orderCompletePageBdy #ec54 .ec54Table tr td:nth-child(1):before{
+    content:'Item no.:';
+  }
+
+  .orderCompletePageBdy #ec54 .ec54Table tr td:nth-child(2):before{
+    content:'Item name:';
+  }
+
+  .orderCompletePageBdy #ec54 .ec54Table tr td:nth-child(3):before{
+    content:'Qty:';
+  }
+
+  .orderCompletePageBdy #ec54 .ec54Table tr td:nth-child(3), .orderCompletePageBdy #ec54 .ec54Table input{
+    max-width:100%;
+    text-align:left;
+  }
+
+  .orderCompletePageBdy #ec54 .ec54Table tr td:nth-child(4):before{
+    content:'Pris:';
+  }
+   .orderCompletePageBdy #ec54 .ec54Table tr td:nth-child(5):before{
+    content:'Total:';
+  }
+
+  .basket-totals table{
+    width:100%;
+  }
+
+  .basket-totals tr{
+    display:block;
+    padding:0rem .5rem;
+    width:100%;
+  }
+
+  .basket-totals tr:first-child{
+    padding-top:1rem;
+  }
+
+  .basket-totals tr:last-child{
+    padding-bottom:1rem;
+  }
+
+  .basket-totals td{
+    padding:.2rem .5rem;
+  }
+  .basket-totals tr td:first-child{
+    width:115px;
+  }
+
+  #main #ShopContent #ec54 .ec54Table .row .td {
+  padding: 0px 5px 0px 0px !important;
+  }
+
+
+  .basket-totals td:last-child{}
+
+  .basket-bottom-navigation input{
+    display:inline-block;
+    font-size:.8rem;
+    width:50%;
+    padding:.5rem 0;
+  }
+
+  .basket-bottom-navigation .buttonNavNext{
+    width:100%;
+    font-size:1rem;
+  }
+  #main #ShopContent #ec54 .ec54Table .rowOdd {
+  height: auto !important;
+  }
+  }
+.c4 {
+display:none;
+}
+#main #precontentContainer #ucInfoMessagebdy div {
+    display: none !important;
+}
+</style>
+
+<div class="orderCompletePageBdy">
+  <eSeller:Data DataType="OrderHead" DataId="Order" IsOrderConfirmation="True" NotFoundYields403="true" />
+<!--<eSeller:Control ControlID="Bestil igen" ControlType="OrderToBasketSpecific" DataSourceId="Order" />-->
+  <div style="text-align:center;">
+<div class="basketBtnUpperDiv">
+
+            <div class="basketPreStep">
+                <a href="/" class="buttonNavPrev"><eSeller:Select text="label_dashboard_link"/></a>
+            </div>
+
+            <div class="basketNxtStep" style="display:none;">
+                <eSeller:Control ControlType="BasketActionButton" ControlId="NextStep" Mode="NavigateNext" CssClass="buttonNavNext" CausesValidation="True" CausesSave="True" >
+                    <eSeller:Attribute Name="Text" Text="button_next(address)" />
+                </eSeller:Control>
+            </div>
+            <div style="clear:both;"></div>
+			</div>
+
+<div class="orderConfirmationHelp" style="display:none;">
+      <eSeller:Select Text="text_confirmation" />
+	 </div>
+	 <span class="content">
+	 <hr style="display:none;width:40%;height:1px;border-width:0;color:gray;background-color:gray;" />
+     </span>
+
+	 <div class="orderNumber">
+	  <eSeller:Select Text="labelOrderNumber" />&amp;nbsp;<eSeller:Select Value-Of="Data_Order:OrderNumber"/>
+	 </div>
+	 <div style="clear:both"></div>
+
+   </div>
+        <div class="orderInformationDiv first">
+            <div class="paymentHeader">
+                <eSeller:Select Text="label_invoice_head" TextSourceControlId="Betalingsadresse" />
+            </div>
+            <eSeller:Control ControlId="Betalingsadresse" ControlType="OrderPaymentAddress" DataSourceId="Order" />
+        </div>
+        <div class="orderInformationDiv last">
+            <div class="shipmentHeader">
+                <eSeller:Select Text="label_delivery_head" TextSourceControlId="Leveringsadresse" />
+            </div>
+            <eSeller:If IsTrue="Data_Order:IsShipmentAddressSpecified">
+                <eSeller:Control ControlId="Leveringsadresse" ControlType="OrderShipmentAddress"  DataSourceId="Order" />
+            </eSeller:If>
+            <eSeller:If IsFalse="Data_Order:IsShipmentAddressSpecified">
+                <eSeller:Select Text="label_delivery_not_specified" TextSourceControlId="Leveringsadresse"/>
+            </eSeller:If>
+            <div class="paymentMethod">
+                <b><eSeller:Select Text="label_payment_method" TextSourceControlId="Betalingsmåde" /></b>&amp;nbsp;<eSeller:Control ControlType="OrderPaymentMethod" ControlId="Betalingsmåde"  DataSourceId="Order" />
+            </div>
+            <div class="shipmentMethod" style="display:none">
+                <b><eSeller:Select Text="label_delivery_method" TextSourceControlId="Leveringsmåde" /></b>&amp;nbsp;<eSeller:Control ControlType="OrderShipmentMethod" ControlId="Leveringsmåde" DataSourceId="Order" />
+            </div>
+            <div class="orderRemarksDiv">
+                <b><eSeller:Select Text="label_order_remarks" TextSourceControlId="Ordrebemærkning"/></b>&amp;nbsp;
+                <eSeller:Control ControlType="OrderOrderingRemarks" ControlId="Ordrebemærkning"  DataSourceId="Order"  />
+            </div>
+        </div>
+
+  <style type="text/css">
+    .ec64TableTotals {width:100%;}
+    .ec64TableTotals .c2 {text-align:right;}
+    .ec54Table .c4 { text-align: center; }
+    .ec54Table .c5, .ec54Table .c6, .ec54Table .c7 { text-align: right; }
+  </style>
+
+  <eSeller:Control ControlId="Ordrelinjer" ControlType="OrderDetails" DataSourceId="Order" CanReOrder="False" />
+  <eSeller:Control ControlId="Totaler" ControlType="OrderTotals" DataSourceId="Order" />
+
+</div>
+
+<!--Google Analytics eCommerce tracking-->
+ <eSeller:Control ControlType="GoogleAnalyticsTracking" ControlID="eCommerceTracking" DataSourceId="Order" />
