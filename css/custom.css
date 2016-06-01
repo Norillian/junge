@@ -216,7 +216,7 @@ display: none;
 .change-lang-container {
     max-width: 386px;
     text-align: right;
-    margin: 0 auto;
+    margin: 0 auto 30px;
 }
 
 .change-lang-container a {
@@ -243,6 +243,12 @@ display: none;
 }
 
 } /* Define mobile styles */
+
+@media only screen and (max-width:640px){
+    #main .frontpageLoginBanner img {
+        padding-top: 45px;
+    }
+}
 
 /* Header Styling */
 header {
@@ -1565,16 +1571,16 @@ font-weight: bold;
 width: 40%;
 }
 #customerSelector tr td:nth-child(1):before {
-content: 'Kunde nr.;
+content: 'Kunde nr.';
 }
 #customerSelector tr td:nth-child(2):before {
-content: 'Firma;
+content: 'Firma';
 }
 #customerSelector tr td:nth-child(3):before {
-content: 'Navn;
+content: 'Navn';
 }
 #customerSelector tr td:nth-child(4):before {
-content: 'Adresse;
+content: 'Adresse';
 }
 #customerSelector tr td:nth-child(5):before {
 content: 'Postnummer';
@@ -1613,13 +1619,13 @@ width: 40%;
 text-align: center;
 }
 .basket-details tr td:nth-child(2):before {
-content: 'Description;
+content: 'Description';
 }
 .basket-details tr td:nth-child(3):before {
-content: 'Number;
+content: 'Number';
 }
 .basket-details tr td:nth-child(4):before {
-content: 'Amount;
+content: 'Amount';
 }
 .basket-details tr td:nth-child(4), .basket-details input {
 max-width: 100%;
@@ -1631,10 +1637,10 @@ text-align: center;
 width: 20%;
 }
 .basket-details tr td:nth-child(5):before {
-content: 'Price;
+content: 'Price';
 }
 .basket-details tr td:nth-child(6):before {
-content: 'Total;
+content: 'Total';
 }
 .basket-details tr td:nth-child(7) {
 display: block;
