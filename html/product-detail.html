@@ -67,7 +67,7 @@
 
 <div class="row">
   <section class="large-12 columns backBtnBdy">
-    <a href="javascript:history.back()" class="back-button"><i class="fa fa-angle-double-left"></i> Back to productlist</a>
+    <a href="javascript:history.back()" class="back-button"><i class="fa fa-angle-double-left"></i><eSeller:Select text="label_Back-to-productlist" /></a>
   </section><!-- /Product: Header -->
 
   <section class="small-12 medium-5 columns product-images">
@@ -87,18 +87,32 @@
         </div>
     </div>-->
 
-      <h1 class="product-name"><eSeller:Select Value-Of="Product:ProductName" /></h1>
+      <h1 class="product-name" style="position:relative;left:-2px;"><eSeller:Select Value-Of="Product:ProductName" /></h1>
+      <div class="clearfix">
+          <eSeller:if istrue="Product:ShowExtProductID">
+            <div class="ExtProductID left">
+              <div class="ExtProductIDLabel">
+                <eSeller:Select text="label_extproductid" />
+              </div>
+              <div class="ExtProductIDValue">
+                <eSeller:Select Value-Of="Product:ExtProductID" />&amp;nbsp;-&amp;nbsp;
+              </div>
+            </div>
+          </eSeller:if>
 
-      <eSeller:if istrue="Product:ShowProductID">
-        <div class="ProductID">
-          <div class="ProductIDLabel">
-            <eSeller:Select text="label_productid" />
-          </div>
-          <div class="ProductIDValue">
-            <eSeller:Select Value-Of="Product:ProductID" />
-          </div>
-        </div>
-      </eSeller:if>
+          <eSeller:if istrue="Product:ShowProductID">
+            <div class="ProductID left">
+              <div class="ProductIDLabel">
+                <eSeller:Select text="label_productid" />
+              </div>
+              <div class="ProductIDValue">
+                <eSeller:Select Value-Of="Product:ProductID" />&amp;nbsp;-&amp;nbsp;
+              </div>
+            </div>
+          </eSeller:if>
+          <span class="stock-amount left"><eSeller:Select text="label_StockAmount" />:&amp;nbsp;<eSeller:Select Value-Of="Product:StocklevelFormatted" /></span>
+          <div style="clear:both;"></div>
+      </div>
 
       <eSeller:if istrue="Product:ShowAltExtProductID">
         <div class="AltExtProductID">
@@ -122,37 +136,27 @@
         </div>
       </eSeller:if>
 
-
       <!--Product descriptions area start-->
+      <eSeller:If isnotempty="Product:ProductShortDescription">
       <div class="pInfoProductDescriptions">
-        <eSeller:If isnotempty="Product:ProductShortDescription">
+
           <div id="etShortDesc" class="content">
             <eSeller:Select Value-Of="Product:ProductShortDescription" />
           </div>
-        </eSeller:If>
+
         <div style="clear:both;"></div>
       </div>
-      <div class="pInfoProductLongDescriptions">
-        <eSeller:If isnotempty="Product:ProductLongDescription">
+      </eSeller:If>
+      <eSeller:If isnotempty="Product:ProductLongDescription">
+        <div class="pInfoProductLongDescriptions">
           <div id="etLongDesc" class="content">
             <eSeller:Select Value-Of="Product:ProductLongDescription" />
           </div>
-        </eSeller:If>
-      </div>
+        </div>
+      </eSeller:If>
       <!--Product descriptions area end-->
 
-      <eSeller:if istrue="Product:ShowExtProductID">
-        <div class="ExtProductID">
-          <div class="ExtProductIDLabel">
-            <eSeller:Select text="label_extproductid" />
-          </div>
-          <div class="ExtProductIDValue">
-            <eSeller:Select Value-Of="Product:ExtProductID" />
-          </div>
-        </div>
-      </eSeller:if>
-
-      <div class="pInfoProductPrices left">
+      <div class="pInfoProductPrices">
           <eSeller:If isfalse="Product:ShowSalesprice">
           <div class="ProductPrice">
             <div class="ProductPriceLabel">
@@ -336,7 +340,7 @@
                 <eSeller:BasketButton ControlID="btnBasketMatrix" CssClass="btnVariantBasketButton">
                 </eSeller:BasketButton>
 
-                <a class="button basket-button"><img src="/media/352/img/thin-0443_shopping_cart_basket_store-white.svg" onerror="this.onerror=null; this.src='/media/352/img/thin-0443_shopping_cart_basket_store.png'" alt="Basket" class="btn-basket-small" /> Add to basket</a>
+                <a class="button basket-button"><img src="/media/352/img/thin-0443_shopping_cart_basket_store-white.svg" onerror="this.onerror=null; this.src='/media/352/img/thin-0443_shopping_cart_basket_store.png'" alt="Basket" class="btn-basket-small" /><eSeller:Select text="label_button-Add-to-basket" /></a>
                 <script>
                   $(document).ready(function(){
                     var hrefjs = $(".btnVariantBasketButton a").attr('href');
@@ -407,7 +411,7 @@
                 <eSeller:Select text="IsDeprecated" />
               </div>
 
-              <button class="basket-button button disabled"><img src="/media/352/img/thin-0443_shopping_cart_basket_store-white.svg" onerror="this.onerror=null; this.src='/media/352/img/thin-0443_shopping_cart_basket_store.png'" alt="Basket" class="btn-basket-small" /> Add to basket</button>
+              <button class="basket-button button disabled"><img src="/media/352/img/thin-0443_shopping_cart_basket_store-white.svg" onerror="this.onerror=null; this.src='/media/352/img/thin-0443_shopping_cart_basket_store.png'" alt="Basket" class="btn-basket-small" /><eSeller:Select text="label_Add-to-basket" /></button>
             </eSeller:If>
             <eSeller:If IsFalse="Product:ShowAddToBasket">
               <div class="etBasket not-on-stock-detail">
