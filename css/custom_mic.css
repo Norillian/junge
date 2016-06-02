@@ -1,398 +1,496 @@
 /* Small screens */
 @media only screen {
-** Basket step 1 styles **
+
+    /*** Basket step 1 styles ***/
 
     .basketStep01 .basket-bottom-navigation .buttonUpdateBasket {
         font-size: 18px;
-color: #666666;
-background-image: url('/media/352/img/updateBasket.png');
-background-repeat: no-repeat;
-background-position: left center;
-padding-left: 30px;
-}
-.basketStep01 .basket-bottom-navigation .buttonClearBasket {
-font-size: 18px;
-color: #666666;
-background-image: url('/media/352/img/deleteBasket.png');
-background-repeat: no-repeat;
-background-position: left center;
-padding-left: 30px;
-}
-.basketStep01 .basket-bottom-navigation .buttonUpdateBasket:hover, .basketStep01 .basket-bottom-navigation .buttonClearBasket:hover {
-opacity: 0.8;
-}
-.basketStep01 .c6 {
-display: none;
-}
-.basketStep01 .c8 {
-text-align: right !important;
-}
-.basketStep01 .basket-top-navigation {
-text-align: left;
-}
-.basketStep01 .basket-top-navigation input {
-padding: 0.5rem;
-color: #666666;
-font-weight: bold;
-font-size: 14px;
-}
-.basketStep01 .basket-header {
-text-align: left;
-}
-#main #ShopContent .basketStep01 #ec38 .ec38TableTotals {
-margin-top: 10px;
-}
-.basketStep01 .basket-totals td {
-padding: 2px 0px;
-font-size: 11px;
-width: 100px;
-}
-.basketStep01 .ec38Total td {
-font-size: 14px;
-padding: 5px 0px;
-}
-/*** Basket step 2 styles ***/
+        color: #666666;
+        background-image: url('/media/352/img/updateBasket.png');
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding-left: 30px;
+    }
+
+    .basketStep01 .basket-bottom-navigation .buttonClearBasket {
+        font-size: 18px;
+        color: #666666;
+        background-image: url('/media/352/img/deleteBasket.png');
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding-left: 30px;
+    }
+
+    .basketStep01 .basket-bottom-navigation .buttonUpdateBasket:hover, .basketStep01 .basket-bottom-navigation .buttonClearBasket:hover {
+        opacity: 0.8;
+    }
+
+    .basketStep01 .c6 {
+        display: none;
+    }
+
+    .basketStep01 .c8 {
+        text-align: right !important;
+    }
+
+    .basketStep01 .basket-top-navigation {
+        text-align: left;
+    }
+
+    .basketStep01 .basket-top-navigation input {
+        padding: 0.5rem;
+        color: #666666;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .basketStep01 .basket-header {
+        text-align: left;
+    }
+
+    #main #ShopContent .basketStep01 #ec38 .ec38TableTotals {
+        margin-top: 10px;
+    }
+
+    .basketStep01 .basket-totals td {
+        padding: 2px 0px;
+        font-size: 11px;
+        width: 100px;
+    }
+
+    .basketStep01 .ec38Total td {
+        font-size: 14px;
+        padding: 5px 0px;
+    }
+
+    /*** Basket step 2 styles ***/
 
     #main #ShopContent .basketStep02 .buttonNavPrev {
-padding: 0.5rem;
-color: #666666;
-font-weight: bold;
-font-size: 14px;
-height: auto !important;
-}
-#main #ShopContent .basketStep02 .basketHeader {
-text-align: left !important;
-}
-#main #ShopContent .basketStep02 .basketAddressOuterDiv, #main #ShopContent .basketStep02 .rightOnepageDiv {
-width: 50% !important;
-display: inline-block;
-float: none !important;
-vertical-align: top;
-}
-#main #ShopContent .basketStep02 .paymentHeader, #main #ShopContent .basketStep02 .shipmentHeader {
-font-size: 14px;
-margin: 0px 0px 15px 0px !important;
-line-height: 22px;
-background-color: #f6f6f6;
-padding: 5px 10px 5px 10px;
-font-weight: bold;
-border: solid 1px #e6e6e6;
-color: #333333;
-}
-#main #ShopContent .basketStep02 .paymentHeader {
-margin-right: 10px !important;
-}
-#main #ShopContent .basketStep02 .AcceptTermsCheckBox label {
-color: #000000;
-font-size: 18px;
-}
-#main #ShopContent .basketStep02 .shipmentAddressCheckBox label {
-color: #333333;
-font-size: 14px;
-}
-#main #ShopContent .basketOrderRemarksOuterDiv {
-width: 100% !important;
-padding-left: 10px !important;
-}
-#main #ShopContent .ec62tblPaymentAddress .c2, #main #ShopContent .ec63tblShipmentAddress .c2 {
-padding-right: 20px !important;
-}
-.paymentInfo {
-padding-left: 10px;
-}
-/*** Customer login styles ***/
+        padding: 0.5rem;
+        color: #666666;
+        font-weight: bold;
+        font-size: 14px;
+        height: auto !important;
+    }
+
+    #main #ShopContent .basketStep02 .basketHeader {
+        text-align: left !important;
+    }
+
+    #main #ShopContent .basketStep02 .basketAddressOuterDiv, #main #ShopContent .basketStep02 .rightOnepageDiv {
+        width: 50% !important;
+        display:inline-block;
+        float:none !important;
+        vertical-align:top;
+    }
+
+    #main #ShopContent .basketStep02 .paymentHeader, #main #ShopContent .basketStep02 .shipmentHeader {
+        font-size: 14px;
+        margin: 0px 0px 15px 0px !important;
+        line-height: 22px;
+        background-color: #f6f6f6;
+        padding: 5px 10px 5px 10px;
+        font-weight:bold;
+        border: solid 1px #e6e6e6;
+        color: #333333;
+    }
+
+    #main #ShopContent .basketStep02 .paymentHeader {
+        margin-right: 10px !important;
+    }
+
+    #main #ShopContent .basketStep02 .AcceptTermsCheckBox label {
+        color: #000000;
+        font-size: 18px;
+    }
+
+    #main #ShopContent .basketStep02 .shipmentAddressCheckBox label {
+        color: #333333;
+        font-size: 14px;
+    }
+
+    #main #ShopContent .basketOrderRemarksOuterDiv {
+        width: 100% !important;
+        padding-left: 10px !important;
+    }
+
+    #main #ShopContent .ec62tblPaymentAddress .c2, #main #ShopContent .ec63tblShipmentAddress .c2 {
+        padding-right: 20px !important;
+    }
+
+    .paymentInfo {
+        padding-left: 10px;
+    }
+
+    /*** Customer login styles ***/
 
     div.loginHelpMessage span a {
-font-family: Arial;
-color: #999;
-text-decoration: underline;
-}
-/*** Request password page styles ***/
+        font-family: Arial;
+        color: #999;
+        text-decoration: underline;
+    }
+
+    /*** Request password page styles ***/
 
     .sendPasswordArea {
-text-align: left !important;
-}
-.sendPasswordReminder {
-background: #000 none repeat scroll 0% 0%;
-border: 1px solid #000;
-font-family: arial;
-padding: 0.5rem;
-text-transform: uppercase;
-color: #fff;
-}
-.sendPasswordText {
-font-size: 20px;
-font-family: arial;
-font-weight: bold;
-color: #333;
-margin-bottom: 20px;
-}
-.sendPasswordInput input {
-max-width: 320px;
-}
-/*** Mini basket in top ***/
+        text-align: left !important;
+    }
+
+    .sendPasswordReminder {
+        background: #000 none repeat scroll 0% 0%;
+        border: 1px solid #000;
+        font-family: arial;
+        padding: 0.5rem;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    .sendPasswordText {
+        font-size: 20px;
+        font-family: arial;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .sendPasswordInput input {
+        max-width: 320px;
+    }
+
+    /*** Mini basket in top ***/
 
     .basketTopMenu {
-background: #000 none repeat scroll 0% 0%;
-padding: 10px;
-width: 70px;
-height: 70px;
-text-align: center;
-position: relative;
-cursor: pointer;
-top: 15px;
-float: right;
-margin-left: 0px;
-}
-.basketTopMenu:hover {
-opacity: 0.8;
-}
-.basketTopMenu span.basket-total {
-display: table-cell;
-background: #969696 none repeat scroll 0% 0%;
-border-radius: 50px;
-color: #FFF;
-font-size: 10px;
-font-weight: bold;
-position: absolute;
-top: 3px;
-right: 8px;
-vertical-align: middle;
-padding: 3px 8px;
-}
-.basketTopMenu span.basket-total {
-display: none !important;
-}
-.fixed-side-basket {
-display: none !important;
-}
-.basketTopMenu.isNotEmpty {
-background: #4ea600 none repeat scroll 0% 0%;
-}
-/*** Sorting on productlist styles ***/
+        background: #000 none repeat scroll 0% 0%;
+        padding: 10px;
+        width: 70px;
+        height: 70px;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+        top: 15px;
+        float:right;
+        margin-left: 0px;
+    }
+
+    .basketTopMenu:hover {
+        opacity: 0.8;
+    }
+
+    .basketTopMenu span.basket-total {
+        display: table-cell;
+        background: #969696 none repeat scroll 0% 0%;
+        border-radius: 50px;
+        color: #FFF;
+        font-size: 10px;
+        font-weight: bold;
+        position: absolute;
+        top: 3px;
+        right: 8px;
+        vertical-align: middle;
+        padding: 3px 8px;
+    }
+
+    .basketTopMenu span.basket-total {
+        display: none !important;
+    }
+
+    .fixed-side-basket {
+        display: none !important;
+    }
+
+    .basketTopMenu.isNotEmpty {
+        background: #4ea600 none repeat scroll 0% 0%;
+    }
+
+    /*** Sorting on productlist styles ***/
 
     .sortingText {
-margin-right: 10px;
-position: relative;
-bottom: 1px;
-}
-.sortingText, .sortingDiv {
-display: inline-block;
-}
-.product-filter {
-display: none;
-}
-/*** Order Confirmation page styles ***/
+        margin-right: 10px;
+        position: relative;
+        bottom: 1px;
+    }
+
+    .sortingText, .sortingDiv {
+        display: inline-block;
+    }
+
+    .product-filter {
+        display: none;
+    }
+
+    /*** Order Confirmation page styles ***/
 
     .orderCompletePageBdy {
-color: #666666;
-font-size: 14px;
-}
-.orderCompletePageBdy table.ec70tblPaymentAddress td.c1, .orderCompletePageBdy table.ec71tblShipmentAddress td.c1 {
-padding-left: 0px !important;
-font-weight: bold;
-width: 100px;
-color: #666666;
-font-size: 14px;
-}
-.orderCompletePageBdy table.ec70tblPaymentAddress td.c2, .orderCompletePageBdy table.ec71tblShipmentAddress td.c2 {
-color: #666666;
-font-size: 14px;
-}
-#main #ShopContent .orderNumber, #main #ShopContent .orderNumberValue {
-font-size: 24px;
-text-align: left !important;
-}
-#main #ShopContent .orderCompletePageBdy .paymentHeader, #main #ShopContent .orderCompletePageBdy .shipmentHeader {
-font-size: 14px;
-margin: 0px 0px 15px 0px !important;
-line-height: 22px;
-background-color: #f6f6f6;
-padding: 5px 10px 5px 10px;
-font-weight: bold;
-border: solid 1px #e6e6e6;
-color: #333333;
-}
-.orderCompletePageBdy .orderInformationDiv {
-display: inline-block;
-width: 50%;
-vertical-align: top;
-}
-.orderCompletePageBdy .orderInformationDiv.first {
-padding-right: 10px;
-}
-#main #ShopContent .orderCompletePageBdy .paymentMethod {
-margin-top: 20px;
-}
-#main #ShopContent .orderCompletePageBdy .orderRemarksDiv {
-margin: 20px 0px;
-}
-#main #ShopContent .orderCompletePageBdy #ec54 .ec54Head th {
-font-size: 14px !important;
-margin: 0px 0px 15px 0px !important;
-line-height: 22px !important;
-background-color: #f6f6f6 !important;
-font-weight: bold !important;
-border-top: solid 1px #e6e6e6 !important;
-border-bottom: solid 1px #e6e6e6 !important;
-color: #333333 !important;
-}
-#main #ShopContent .orderCompletePageBdy #ec54 .ec54Head th.c3 {
-border-left: solid 1px #e6e6e6 !important;
-}
-#main #ShopContent .orderCompletePageBdy #ec54 .ec54Head th.c8 {
-border-right: solid 1px #e6e6e6 !important;
-}
-#main #ShopContent .orderCompletePageBdy #ec54 .ec54Table .row td, #main #ShopContent #ec77 .ec77TableTotals td {
-color: #666666 !important;
-font-size: 14px !important;
-}
-#main #ShopContent .orderCompletePageBdy #ec54 .ec54Table .row {
-background-color: transparent !important;
-}
-/*** Leftside menu styles ***/
+        color: #666666;
+        font-size: 14px;
+    }
+
+    .orderCompletePageBdy table.ec70tblPaymentAddress td.c1, .orderCompletePageBdy table.ec71tblShipmentAddress td.c1 {
+        padding-left: 0px !important;
+        font-weight: bold;
+        width: 100px;
+        color: #666666;
+        font-size: 14px;
+    }
+
+    .orderCompletePageBdy table.ec70tblPaymentAddress td.c2, .orderCompletePageBdy table.ec71tblShipmentAddress td.c2 {
+        color: #666666;
+        font-size: 14px;
+    }
+
+    #main #ShopContent .orderNumber, #main #ShopContent .orderNumberValue {
+        font-size: 24px;
+        text-align: left !important;
+    }
+
+    #main #ShopContent .orderCompletePageBdy .paymentHeader, #main #ShopContent .orderCompletePageBdy .shipmentHeader {
+        font-size: 14px;
+        margin: 0px 0px 15px 0px !important;
+        line-height: 22px;
+        background-color: #f6f6f6;
+        padding: 5px 10px 5px 10px;
+        font-weight:bold;
+        border: solid 1px #e6e6e6;
+        color: #333333;
+    }
+
+    .orderCompletePageBdy .orderInformationDiv {
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+    }
+
+    .orderCompletePageBdy .orderInformationDiv.first {
+        padding-right: 10px;
+    }
+
+    #main #ShopContent .orderCompletePageBdy .paymentMethod {
+        margin-top: 20px;
+    }
+
+    #main #ShopContent .orderCompletePageBdy .orderRemarksDiv {
+        margin: 20px 0px;
+    }
+
+    #main #ShopContent .orderCompletePageBdy #ec54 .ec54Head th {
+        font-size: 14px !important;
+        margin: 0px 0px 15px 0px !important;
+        line-height: 22px !important;
+        background-color: #f6f6f6 !important;
+        font-weight:bold !important;
+        border-top: solid 1px #e6e6e6 !important;
+        border-bottom: solid 1px #e6e6e6 !important;
+        color: #333333 !important;
+    }
+
+    #main #ShopContent .orderCompletePageBdy #ec54 .ec54Head th.c3 {
+        border-left: solid 1px #e6e6e6 !important;
+    }
+
+    #main #ShopContent .orderCompletePageBdy #ec54 .ec54Head th.c8 {
+        border-right: solid 1px #e6e6e6 !important;
+    }
+
+    #main #ShopContent .orderCompletePageBdy #ec54 .ec54Table .row td, #main #ShopContent #ec77 .ec77TableTotals td {
+        color: #666666 !important;
+        font-size: 14px !important;
+    }
+
+    #main #ShopContent .orderCompletePageBdy #ec54 .ec54Table .row {
+        background-color: transparent !important;
+    }
+
+    /*** Leftside menu styles ***/
 
     .left-off-canvas-menu .off-canvas-list ul {
-margin-left: 0px;
-}
-ul.off-canvas-list li a {
-padding: 0.5rem 0.9375rem;
-}
-ul.off-canvas-list > ul > li > ul {
-display: none;
-}
-ul.off-canvas-list > ul > li > ul.active {
-display: block;
-}
-ul.off-canvas-list label, .productMenuLeftSide .shopMenu li a.hasSubMenu {
-position: relative;
-}
-ul.off-canvas-list label:after, .productMenuLeftSide .shopMenu li a.hasSubMenu:after {
-content: "\f054";
-font-family: FontAwesome;
-font-style: normal;
-font-weight: normal;
-text-decoration: inherit;
-position: absolute;
-right: 0.9375rem;
-top: 5px;
-font-size: 18px;
-}
-ul.off-canvas-list label.active:after, .productMenuLeftSide .shopMenu li a.hasSubMenu.active:after {
-content: "\f078";
-top: 3px;
-}
-ul.off-canvas-list .logoutLeftSide label a, ul.off-canvas-list .logoutLeftSide label a:hover {
-background-color: transparent;
-padding: 0px;
-margin: 0px;
-color: #fff;
-text-decoration: none;
-border: medium none;
-}
-ul.off-canvas-list .logoutLeftSide label:after {
-content: "";
-}
-ul.off-canvas-list li a:hover {
-opacity: 0.8;
-}
-.productMenuLeftSide .shopMenu > li > a {
-padding-left: 0.9375rem;
-background-color: #333333;
-font-size: 16px;
-}
-.productMenuLeftSide .shopMenu > li > ul > li > a {
-padding-left: 1.9375rem;
-background-color: #2a2a2a;
-font-size: 14px;
-}
-.productMenuLeftSide .shopMenu > li > ul > li > ul > li > a {
-padding-left: 2.9375rem;
-background-color: #1d1d1d;
-font-size: 14px;
-}
-.productMenuLeftSide .shopMenu li ul {
-display: none;
-}
-.productMenuLeftSide .shopMenu li ul.active {
-display: block;
-}
+        margin-left: 0px;
+    }
+
+    ul.off-canvas-list li a {
+        padding: 0.5rem 0.9375rem;
+    }
+
+    ul.off-canvas-list > ul > li > ul {
+        display: none;
+    }
+
+    ul.off-canvas-list > ul > li > ul.active {
+        display: block;
+    }
+
+    ul.off-canvas-list label, .productMenuLeftSide .shopMenu li a.hasSubMenu {
+        position: relative;
+    }
+
+    ul.off-canvas-list label:after, .productMenuLeftSide .shopMenu li a.hasSubMenu:after {
+        content: "\f054";
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        position: absolute;
+        right: 0.9375rem;
+        top: 5px;
+        font-size: 18px;
+    }
+
+    ul.off-canvas-list label.active:after, .productMenuLeftSide .shopMenu li a.hasSubMenu.active:after {
+        content: "\f078";
+        top: 3px;
+    }
+
+    ul.off-canvas-list .logoutLeftSide label a, ul.off-canvas-list .logoutLeftSide label a:hover {
+        background-color: transparent;
+        padding: 0px;
+        margin:0px;
+        color: #fff;
+        text-decoration: none;
+        border: medium none;
+    }
+
+    ul.off-canvas-list .logoutLeftSide label:after {
+        content: "";
+    }
+
+    ul.off-canvas-list li a:hover {
+        opacity: 0.8;
+    }
+
+    .productMenuLeftSide .shopMenu > li > a {
+        padding-left: 0.9375rem;
+        background-color: #333333;
+        font-size: 16px;
+    }
+
+    .productMenuLeftSide .shopMenu > li > ul > li > a {
+        padding-left: 1.9375rem;
+        background-color: #2a2a2a;
+        font-size: 14px;
+    }
+
+    .productMenuLeftSide .shopMenu > li > ul > li > ul > li > a {
+        padding-left: 2.9375rem;
+        background-color: #1d1d1d;
+        font-size: 14px;
+    }
+
+    .productMenuLeftSide .shopMenu li ul {
+        display: none;
+    }
+
+    .productMenuLeftSide .shopMenu li ul.active {
+        display: block;
+    }
+
 }
 
 @media only screen and (max-width: 40em) {
-** Basket step 1 styles **
+
+    /*** Basket step 1 styles ***/
 
     .basketStep01 .basket-bottom-navigation .buttonUpdateBasket {
         font-size: 16px;
-padding-left: 25px;
-}
-.basketStep01 .basket-bottom-navigation .buttonClearBasket {
-font-size: 16px;
-padding-left: 25px;
-}
-/*** Basket step 2 styles ***/
+        padding-left: 25px;
+    }
+
+    .basketStep01 .basket-bottom-navigation .buttonClearBasket {
+        font-size: 16px;
+        padding-left: 25px;
+    }
+
+    /*** Basket step 2 styles ***/
 
     #main #ShopContent .basketStep02 .basketAddressOuterDiv, #main #ShopContent .basketStep02 .rightOnepageDiv {
-width: 100% !important;
-float: none !important;
-}
-#main #ShopContent .basketStep02 .paymentHeader, #main #ShopContent .basketStep02 .shipmentHeader {
-margin: 0px 0px 15px 0px !important;
-}
-#main #ShopContent .basketStep02 .AcceptTermsCheckBox label {
-color: #000000;
-font-size: 14px;
-}
-#main #ShopContent .basketOrderRemarksOuterDiv {
-padding-left: 0px !important;
-}
-#main #ShopContent .ec62tblPaymentAddress .c2 {
-padding-right: 0px !important;
-}
-#main #ShopContent .ec63tblShipmentAddress .c2 {
-padding-right: 0px !important;
-}
-.paymentInfo {
-padding-left: 0px;
-}
-/*** Request password page styles ***/
+        width: 100% !important;
+        float: none !important;
+    }
+
+    #main #ShopContent .basketStep02 .paymentHeader, #main #ShopContent .basketStep02 .shipmentHeader {
+        margin: 0px 0px 15px 0px !important;
+    }
+
+    #main #ShopContent .basketStep02 .AcceptTermsCheckBox label {
+        color: #000000;
+        font-size: 14px;
+    }
+
+    #main #ShopContent .basketOrderRemarksOuterDiv {
+        padding-left: 0px !important;
+    }
+
+    #main #ShopContent .ec62tblPaymentAddress .c2 {
+        padding-right: 0px !important;
+    }
+
+    #main #ShopContent .ec63tblShipmentAddress .c2 {
+        padding-right: 0px !important;
+    }
+
+    .paymentInfo {
+        padding-left: 0px;
+    }
+
+    /*** Request password page styles ***/
 
     .sendPasswordText {
-font-size: 14px;
-}
-/*** Order Confirmation page styles ***/
+        font-size: 14px;
+    }
+
+    /*** Order Confirmation page styles ***/
 
     .orderCompletePageBdy .orderInformationDiv {
-display: inline-block;
-width: 100%;
-vertical-align: top;
-}
-.orderCompletePageBdy .orderInformationDiv.first {
-padding-right: 0px;
-}
-#main #ShopContent .orderCompletePageBdy #ec77 .ec77TableTotals {
-width: 100% !important;
-}
-/*** Produktmenu content page styles ***/
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+    }
+
+    .orderCompletePageBdy .orderInformationDiv.first {
+        padding-right: 0px;
+    }
+
+    #main #ShopContent .orderCompletePageBdy #ec77 .ec77TableTotals {
+        width: 100% !important;
+    }
+
+    /*** Produktmenu content page styles ***/
 
     .product-menu {
-display: none !important;
-}
+        display: none !important;
+    }
+
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
 /* Medium screens */
 @media only screen and (min-width: 40.063em) {
-** Basket step 1 styles **
+
+    /*** Basket step 1 styles ***/
 
     .basketStep01 .c1, .basketStep01 .c3 {
         width: 100px;
-}
+    }
+
 } /* min-width 641px, medium screens */
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-** Mini basket in top **
+
+    /*** Mini basket in top ***/
 
     .basketTopMenu {
         width: 71px;
-height: 71px;
-}
+        height: 71px;
+    }
+
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+/* Large screens */
+@media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+/* XLarge screens */
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+/* XXLarge screens */
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */
