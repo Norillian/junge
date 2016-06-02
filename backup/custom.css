@@ -251,11 +251,6 @@ display: none;
     width: 100%;
 }
 
-#main #ShopContent #InvoiceDetails {
-    width: 100% !important;
-}
-
-
 } /* Define mobile styles */
 
 @media only screen and (max-width:640px){

@@ -115,7 +115,7 @@ weightBeforeZipCode=200000;
                         basketDiv.addClass('not-on-stock');
                         basketDiv.html('not on stock');
                     } else if(val.hasVariants === true) {
-                        basketDiv.html('Select variants<i class="fa fa-angle-right show-for-medium-only"></i>');
+                        basketDiv.html(selectVariantsTxt + '<i class="fa fa-angle-right show-for-medium-only"></i>');
                         basketDiv.addClass('variant-basket');
                         basketDiv.click(function(){
                             window.location.href = val.URLPathAndQuery;
@@ -180,7 +180,7 @@ weightBeforeZipCode=200000;
                 //productDiv.append(productDiscountPriceDiv);
 
                 productIdDiv = $("<div class='product-number'>" + val.id + "</div>");
-                productIdDiv.prepend('Item no.: ');
+                productIdDiv.prepend(itemNoTxt + ': ');
 
                 productDiv.append(productIdDiv);
 

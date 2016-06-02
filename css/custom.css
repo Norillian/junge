@@ -265,6 +265,34 @@ h2 {
     width: 100%;
 }
 
+#main #ShopContent #InvoiceDetails {
+    width: 100% !important;
+}
+
+#main #ShopContent #invoiceTotals {
+    width: 100%;
+    max-width: 375px;
+    margin: 20px 0;
+}
+
+#main #ShopContent #invoiceTotals td {
+    text-align: right;
+}
+
+.page-invoice-details span {
+    display: inline-block;
+    font-size: 13px;
+}
+
+.page-invoice-details .right {
+    width: 100%;
+    max-width: 375px;
+}
+
+.page-invoice-details span.header {
+    min-width: 140px;
+}
+
 } /* Define mobile styles */
 
 @media only screen and (max-width:640px){
@@ -274,6 +302,20 @@ h2 {
     .customer-info span {
     display: inline-block;
     min-width: 120px;
+}
+.page-invoice-details span.header {
+    min-width: 120px;
+}
+.page-invoice-details td[data-th="Item description"],
+.page-invoice-details th.itemDescription,
+.invoice-body td[data-th="Date"],
+.invoice-body th.docDate {
+    display: none !important;
+}
+
+.page-invoice-details table th,
+.invoice-body table th {
+    font-size: 12px;
 }
 }
 
