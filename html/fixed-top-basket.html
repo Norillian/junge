@@ -1,0 +1,11 @@
+<div class="basketTopMenu right-off-canvas-toggle">
+    <img src="/media/352/img/thin-0443_shopping_cart_basket_store-white.svg" onerror="this.onerror=null; this.src='/media/352/img/thin-0443_shopping_cart_basket_store.png'" alt="Basket" class="btn-basket-small" />
+    <span class="basket-total">
+        <eSeller:Select Value-Of="Basket:ItemCount" />
+    </span>
+    <eSeller:If IsFalse="Basket:IsEmpty">
+        <script type="text/javascript">
+            $('.basketTopMenu').addClass('isNotEmpty');
+        </script>
+    </eSeller:If>
+</div>

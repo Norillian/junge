@@ -1,0 +1,49 @@
+<style type="text/css">
+    .currentCustomerTop li a {
+        padding: 0.5rem 0;
+    }
+</style>
+
+<div class="currentCustomerTablet f-dropdown content hide-for-large-up" id="drop5" aria-hidden="true" aria-autoclose="false" tabindex="-1" data-dropdown-content="">
+<div class="currentCustomerTop">
+    <div class="currentCustomerHeader">
+      <h3><eSeller:Select text="label_customer_header" /></h3>
+    </div>
+    <eSeller:If IsFalse="Customer:IsTemplate">
+      <div class="currentCustomerName">
+        <eSeller:Select Value-Of="Customer:Name" />
+      </div>
+      <div class="currentCustomerMail">
+        <eSeller:Select Value-Of="Customer:Email" />
+      </div>
+      <br />
+      <div class="currentCustomerHeader">
+          <h3><eSeller:Select text="label_infomenu_header" /></h3>
+      </div>
+      <eSeller:Control ControlType="ShopMenu" ControlID="InfoMenuTopmenu" MenuType="InfoMenu1" />
+    </eSeller:If>
+
+    <eSeller:If IsTrue="Customer:IsTemplate">
+      <div class="empty-current-customer">
+
+      </div>
+    </eSeller:If>
+</div>
+</div>
+
+<div class="currentSalesPersonTablet f-dropdown content hide-for-large-up" id="drop6" aria-hidden="true" aria-autoclose="false" tabindex="-1" data-dropdown-content="">
+<div class="currentSalespersonTop row">
+  <div class="currentSalespersonHeader large-12 columns">
+    <h3><eSeller:Select text="label_salesperson_header" /></h3>
+  </div>
+  <div class="currentSalespersonName large-12 columns">
+    <eSeller:Select Value-Of="SalespersonLogin:Username" />
+  </div>
+  <div class="currentSalespersonMail large-12 columns">
+    <eSeller:Select Value-Of="SalespersonLogin:Email" />
+  </div>
+  <div class="large-12 columns">
+    <a class="logout btn btn-serif" href="/logout.aspx?salespersonlogout=true"><eSeller:Select text="label_logout" /></a>
+  </div>
+</div>
+</div>

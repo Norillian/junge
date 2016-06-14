@@ -158,7 +158,7 @@ weightBeforeZipCode=200000;
                 productPriceDiv = $('<div></div>');
                 //productPriceDiv.attr('href', val.URLPathAndQuery);
                 productPriceDiv.addClass('productPriceDiv');
-                productPriceDiv.prepend('Price: ')
+                productPriceDiv.prepend(salespriceProductlist+': ')
                 if(!val.hasSalesPrice == false) {
                     productPriceDiv.append(val.salesPrices[0].tagPriceFormatted);
                 }

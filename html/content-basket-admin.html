@@ -1,0 +1,40 @@
+<eSeller:Css Name="#etgHeadingdiv" Selector="#etHeadingdiv" GroupName="#etgTexts" SelectorGroup="3" />
+<eSeller:Css Name="#etgHeading" Selector="#etHeadingh1" GroupName="#etgTexts" SelectorGroup="12" />
+<eSeller:Css Name="#ecBasketEditorText" Selector="#ecBasketEditor" GroupName="#ecBasketEditor" SelectorGroup="12" SortOrder="1" />
+<eSeller:Css Name="#ecBasketEditor" Selector=".ecBasketEditor" GroupName="#ecBasketEditor" SelectorGroup="3" SortOrder="2"/>
+
+<style type="text/css">
+.basketAdminInfo {
+margin-bottom: 1em;
+}
+</style>
+<div class="row basket-administration">
+  <div class="small-12 columns basket-navigation">
+    <a class="back-button" href="/"><i class="fa fa-angle-double-left"></i> <eSeller:Select text="label_menu_navigatetext" /></a>
+  </div>
+  <div class="small-12 columns basket-header">
+    <h2><eSeller:Select text="label_OpenOrder" /></h2>
+   <div class="basketAdminInfo"><eSeller:Select text="label_basketAdminInfo" /></div>
+  </div>
+  <div class="small-12 columns basket-input">
+    <!-- <eSeller:Select text="label_basketeditor" />-->
+    <eSeller:Control ControlID="basketEdit" ControlType="BasketEditor" />
+  </div>
+
+  <div class="small-12 columns basket-list">
+    <eSeller:Control ControlID="basketList" ControlType="BasketSelector" />
+  </div>
+</div>
+
+
+<!-- <eSeller:Css Name="#ecBasketSelectorText" Selector="#ecBasketSelector" GroupName="#ecBasketSelector" SelectorGroup="12" SortOrder="1" />
+<div id="ecBasketSelector">
+  <eSeller:Select text="label_basketselector" />
+</div> -->
+
+
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>

@@ -1,0 +1,42 @@
+<div class="row frontpageLinks clearfix">
+    <div class="small-6 medium-3 columns">
+        <a class="selectCustomer arrow-down btn-front" data-dropdown="drop3" aria-controls="drop3" aria-expanded="false">
+            <img src="/media/352/img/thin-0710_business_tie_user_profile_avatar_man_male.svg" onerror="this.onerror=null; this.src='/media/352/img/thin-0710_business_tie_user_profile_avatar_man_male.png'" alt="Select Customer" /><br />
+            <eSeller:Select text="label_Frontpage-Select-customer" />
+        </a>
+    </div>
+    <div class="small-6 medium-3 columns">
+        <a class="ShopMainOrder btn-front" href="/pl/Re-orders_134270.aspx">
+            <img src="/media/352/img/thin-0072_document_file_paper_text.svg" onerror="this.onerror=null; this.src='/media/352/img/thin-0072_document_file_paper_text.png'" alt="Shop main order" /><br /><eSeller:Select text="label_Frontpage-Re-orders" /></a>
+    </div>
+    <div class="small-6 medium-3 columns">
+        <a href="/pl/Pre-orders_134269.aspx" class="shopStockOrderButton btn-front">
+            <img src="/media/352/img/thin-0072_document_file_paper_text.svg" onerror="this.onerror=null; this.src='/media/352/img/thin-0072_document_file_paper_text.png'" alt="Shop stock order" />
+            <br /><eSeller:Select text="label_Frontpage-Pre-orders" /></a>
+    </div>
+    <div class="small-6 medium-3 columns">
+        <a href="/basket/adminshoppingcarts.aspx" class="activeOrderButton btn-front">
+            <img src="/media/352/img/thin-0454_shopping_bag_sale_store.svg" onerror="this.onerror=null; this.src='/media/352/img/thin-0454_shopping_bag_sale_store.png'" alt="Active order" />
+            <br /><eSeller:Select text="label_Frontpage-Active-Baskets" /></a>
+    </div>
+    <div class="large-12 columns">
+        <!-- <div id="drop3" class="mega f-dropdown content" aria-hidden="true" aria-autoclose="false" tabindex="-1" data-dropdown-content="">
+            <div id="customerSelector">
+				<eSeller:Control ControlType="CustomerSelector" ControlID="Kundevælger" />
+			</div>
+	  </div> -->
+	  <div id="drop4" class="mega f-dropdown content" aria-hidden="true" aria-autoclose="false" tabindex="-1" data-dropdown-content="">
+			<eSeller:Control ControlType="ShopMenu" ControlID="ProductMenu" MenuType="Product" Depth="1" />
+	  </div>
+	</div>
+</div>
+
+<style type="text/css">
+	.fixed-side-basket{
+		display:none;
+	}
+	.page{
+		padding:0;
+		background:none;
+	}
+</style>

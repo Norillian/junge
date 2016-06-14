@@ -322,25 +322,12 @@ div.divVariantSelector{
     display:block;
     width:100%;
     padding:.2rem 1rem;
-    padding-left:7rem;
     text-align:left;
   }
 
   .basket-list td:before{
     display:inline-block;
     font-weight:bold;
-    margin-left:-6rem;
-    width:6rem;
-  }
-
-  .basket-list td:nth-child(1):before{
-    content:'Basket name'
-  }
-  .basket-list td:nth-child(2):before{
-    content:'Product no.'
-  }
-  .basket-list td:nth-child(3):before{
-    content:'Amount'
   }
 
   .basket-list td.c5 a{

@@ -1,0 +1,39 @@
+<div class="topTabletSalespersonTablet row hide-for-large-up">
+	<div class="medium-4 hide-for-large-up columns">
+		<a class="SalespersonTabletDropdownLink arrow-down btn-front hide-for-large-up" data-dropdown="drop6" aria-controls="drop6" aria-expanded="false">
+<img src="/media/352/img/thin-0710_business_tie_user_profile_avatar_man_male.svg" onerror="this.onerror=null; this.src='/media/352/img/thin-0710_business_tie_user_profile_avatar_man_male.png'" alt="Select Customer" />
+			<eSeller:Select text="label_salesperson" />
+		</a>
+	</div>
+	<div class="medium-4 hide-for-large-up columns">
+		<a class="customerTabletDropdownLink arrow-down btn-front hide-for-large-up" data-dropdown="drop5" aria-controls="drop5" aria-expanded="false">
+<img src="/media/352/img/thin-0710_business_tie_user_profile_avatar_man_male.svg" onerror="this.onerror=null; this.src='/media/352/img/thin-0710_business_tie_user_profile_avatar_man_male.png'" alt="Select Customer" />
+			<eSeller:Select text="label_customer" />
+		</a>
+	</div>
+
+	<div class="medium-4 hide-for-large-up columns">
+	   <a class="searchTabletDropdownLink arrow-down btn-front hide-for-large-up " data-dropdown="drop2" aria-controls="drop2" aria-expanded="false">
+<img style="display:block" src="/media/352/img/thin-0033_search_find_zoom.svg" onerror="this.onerror=null; this.src='/media/352/img/thin-0033_search_find_zoom.svg'" alt="Search" />
+
+<eSeller:Select text="label_search" /></a>
+	</div>
+</div>
+
+
+<div class="currentSalesPersonOuter show-for-large-up">
+<div class="currentSalespersonTop row">
+  <div class="currentSalespersonHeader large-12 columns">
+    <h3><eSeller:Select text="label_salesperson_header" /></h3>
+  </div>
+  <div class="currentSalespersonName large-12 columns">
+    <eSeller:Select Value-Of="SalespersonLogin:Username" />
+  </div>
+  <div class="currentSalespersonMail large-12 columns">
+    <eSeller:Select Value-Of="SalespersonLogin:Email" />
+  </div>
+  <div class="large-12 columns">
+    <a class="logout btn btn-serif" href="/logout.aspx?salespersonlogout=true"><eSeller:Select text="label_button-logout" /></a>
+  </div>
+</div>
+</div>

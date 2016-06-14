@@ -1,0 +1,79 @@
+<ul class="off-canvas-list">
+    <ul class="productMenuLeftSide">
+        <li>
+            <label>
+                <eSeller:Select text="label_productmenu_header" />
+            </label>
+            <eSeller:Control ControlType="ShopMenu" ControlID="ProductMenuLeftSide" MenuType="Product" />
+        </li>
+    </ul>
+    <ul class="customerMenuLeftSide">
+        <li>
+            <label>
+                <eSeller:Select text="label_customer_header" />
+            </label>
+            <ul>
+                <eSeller:If IsFalse="Customer:IsTemplate">
+                    <li>
+                        <a href="">
+                            <eSeller:Select Value-Of="Customer:Name" />
+                        </a>
+                    </li>
+                </eSeller:If>
+                <eSeller:If IsFalse="Customer:IsTemplate">
+                    <li>
+                        <a href="">
+                            <eSeller:Select Value-Of="Customer:Email" />
+                        </a>
+                    </li>
+                </eSeller:If>
+                <li>
+                    <a href="../customers/valg.aspx">
+                        <eSeller:Select text="label_customer_change" />
+                    </a>
+                </li>
+                <li>
+                    <a href="../logout.aspx?customerlogout=true">
+                        <eSeller:Select text="label_end_customer" />
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="salesPersonMenuLeftSide">
+        <li>
+            <label>
+                <eSeller:Select text="label_salesperson_header" />
+            </label>
+            <ul>
+                <li>
+                    <a href="">
+                        <eSeller:Select Value-Of="SalespersonLogin:Name" />
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <eSeller:Select Value-Of="SalespersonLogin:Email" />
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="productMenuLeftSide">
+        <li>
+            <label>
+                <eSeller:Select text="label_infomenu_header" />
+            </label>
+            <eSeller:Control ControlType="ShopMenu" ControlID="InfoMenuLeftSide" MenuType="InfoMenu1" />
+        </li>
+    </ul>
+    <ul class="logoutLeftSide">
+        <li>
+            <label>
+                <a href="/logout.aspx?salespersonlogout=true">
+                    <eSeller:Select text="label_logout" />
+                </a>
+            </label>
+        </li>
+    </ul>
+</ul>
