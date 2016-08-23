@@ -293,6 +293,8 @@ h2 {
     min-width: 140px;
 }
 
+
+
 } /* Define mobile styles */
 
 @media only screen and (max-width:640px){
@@ -307,7 +309,6 @@ h2 {
     min-width: 120px;
 }
 .page-invoice-details td[data-th="Item description"],
-.page-invoice-details th.itemDescription,
 .invoice-body td[data-th="Date"],
 .invoice-body th.docDate {
     display: none !important;
@@ -317,6 +318,12 @@ h2 {
 .invoice-body table th {
     font-size: 12px;
 }
+}
+@media only screen and (max-width:480px){
+    .page-invoice-details{
+        max-width: 480px;
+        overflow: auto;
+    }
 }
 
 /* Header Styling */
@@ -743,10 +750,19 @@ a[aria-expanded="true"].fixed-side-basket .basket-back{
     min-height: 40px;
     float: left;
     border: solid 1px #B9B9B9;
+    position: relative;
 }
 
 .list-view .productImage img{
     max-height: 40px;
+}
+
+.list-view .productImage i {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    color: #00cc33;
+    font-size: 18px;
 }
 
 .list-view .productName{
@@ -858,10 +874,19 @@ input.qty-input.grey{
 .gallery-view .productImage {
     min-height: 160px;
     border: solid 1px #B9B9B9;
+    position: relative;
 }
 
 .gallery-view .productImage img{
     max-height: 160px;
+}
+
+.gallery-view .productImage i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #00cc33;
+    font-size: 32px;
 }
 
 .gallery-view .productName{
@@ -1322,10 +1347,10 @@ max-width: 80px !important;
     font-style: normal;
 }
 .basketStep01 .basket-details table td.c3{
-    width: auto !important;
+    width: auto;
 }
 .basketStep01 .basket-details table td.c4{
-    width: 100px !important;
+    width: 100px;
 }
 /* Basket: Totals */
 .basket-totals table{
@@ -1620,7 +1645,7 @@ table#miyazaki tbody tr:not(:last-child) {
     }
 
     /* Header */
-
+    .basketStep01 .basket-details table td.c3,
     .basketStep01 .basket-details table td.c4{
       width:100%;
     }
@@ -1675,6 +1700,14 @@ table#miyazaki tbody tr:not(:last-child) {
     .gallery-view .productImage img,
     .list-view .productImage img{
         max-height: 160px;
+    }
+
+    .gallery-view .productImage i,
+    .list-view .productImage i {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 36px;
     }
 
     .gallery-view .productName,
@@ -2023,6 +2056,7 @@ table#miyazaki tbody tr:not(:last-child) {
         padding: 0 !important;
         text-align: left;
     }
+
 
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 

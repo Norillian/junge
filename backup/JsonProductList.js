@@ -55,8 +55,6 @@ weightBeforeZipCode=200000;
 
             $.each(jsondata.data.items, function(key, val) {
 
-                //console.log($( ".side-basket #BasketdetailedBoxbdy .c1 a[href*='"+val.eSellerId+"']" ).length);
-
                 //Make sure to get the correct stock message
                 var deliveryData = "nothing";
                 var hasExpectedDelivery = 'false';
@@ -125,6 +123,7 @@ weightBeforeZipCode=200000;
                     }
                 }
 
+
                 productDiv = $("<div data-equalizer></div>");
                 productDiv.addClass("productElement item clearfix");
                 productImageDiv = $("<div></div>");
@@ -135,15 +134,6 @@ weightBeforeZipCode=200000;
                 productImg.attr("src", imgsrc);
                 productImg.attr("alt", val.name);
                 productLink.append(productImg);
-                //If the product is in basket
-                if($( ".side-basket #BasketdetailedBoxbdy .c1 a[href*='"+val.eSellerId+"']" ).length > 0) {
-
-                    productInBasket = $('<i></i>');
-                    productInBasket.addClass('product-in-basket fa fa-shopping-cart');
-
-                    productLink.append(productInBasket);
-
-                }
                 productImageDiv.append(productLink);
 
                 productDiv.append(productImageDiv);
